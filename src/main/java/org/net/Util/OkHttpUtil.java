@@ -259,10 +259,10 @@ public class OkHttpUtil {
 
     public static void main(String[] args) {
         //测试百度api
-        String sign = "20240716002100704"+"放弃"+"123456"+"4nzrRvlMgqo0yx1_8f5A";
+        String sign = "202422100704"+"放弃"+"123456"+"4nzrRvl2k0yx1_8f5A";
 //        //构建body
 //        RequestBody body = new FormBody.Builder()
-//                .add("q", "杨枫")
+//                .add("q", "xx")
 //                .add("from", "zh")
 //                .add("to", "en")
 //                .add("appid", "20240716002100704")
@@ -291,7 +291,7 @@ public class OkHttpUtil {
         body.put("q", "放弃");
         body.put("from", "zh");
         body.put("to", "en");
-        body.put("appid", "20240716002100704");
+        body.put("appid", "202422100704");
         body.put("salt", "123456");
         body.put("sign",MD5Utils.getMD5(sign));
         BaiduTranslateVO result =OkHttpUtil.post("https://fanyi-api.baidu.com/api/trans/vip/translate",map,body,BaiduTranslateVO.class);
