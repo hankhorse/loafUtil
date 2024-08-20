@@ -17,8 +17,6 @@ public enum HttpEnum {
     APP_XML("application/xml"),
     APP_FORM_DATA("multipart/form-data"),
     APP_OCTET_STREAM("application/octet-stream"),
-
-
     ;
 
 
