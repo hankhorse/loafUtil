@@ -106,7 +106,9 @@ public class OkHttpUtil {
                 }
             }
         }
-
+        if(headers==null){
+            headers = new HashMap<>();
+        }
         Request request = new Request.Builder()
                 .url(sb.toString())
                 .headers(Headers.of(headers))
